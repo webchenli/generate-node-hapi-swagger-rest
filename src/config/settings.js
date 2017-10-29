@@ -1,6 +1,6 @@
 'use strict';
 
 const settings = {
-    port: process.env.PORT || 3000
+    port:  8080
 }
 module.exports = settings;

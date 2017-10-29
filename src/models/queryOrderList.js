@@ -1,0 +1,80 @@
+'use strict';
+
+const queryOrderList =
+{
+    result:0,
+    "summarizes":[
+        {
+            "name":"下单数",
+            "value":192,
+            "type":3
+        },
+        {
+            "name":"总件数",
+            "value":192,
+            "type":3
+        },
+        {
+            "name":"接单额",
+            "value":192,
+            "type":3
+        },
+        {
+            "name":"已收款",
+            "value":192,
+            "type":3
+        },
+        {
+            "name":"欠收款",
+            "value":192,
+            "type":1
+        },
+        {
+            "name":"逾期款",
+            "value":192,
+            "type":2
+        },
+        {
+            "name":"出货数",
+            "value":192,
+            "type":1
+        },
+        {
+            "name":"件数差",
+            "value":192,
+            "type":1
+        },
+        {
+            "name":"毛利润",
+            "value":192,
+            "type":3
+        }
+    ],
+    "orders":[
+        {
+            "id":1,
+            "sku_code":"123123",
+            "client":{"id":1,name:"张三"},
+            "price":123,
+            "num":4455,
+            "deliver_num":123,
+            "num_diff":{value:"1234",type:3},
+            "colth_money":{value:999,type:2},
+            "submaterial_money":{value:333,type:1},
+        },
+        {
+            "id":2,
+            "sku_code":"999",
+            "client":{"id":1,name:"张三"},
+            "price":123,
+            "num":4455,
+            "deliver_num":123,
+            "num_diff":{value:"1234",type:1},
+            "colth_money":{value:999,type:3},
+            "submaterial_money":{value:333,type:2},
+        },
+
+    ],
+}
+
+module.exports = queryOrderList;
