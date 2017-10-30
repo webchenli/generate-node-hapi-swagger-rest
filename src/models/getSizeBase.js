@@ -5,16 +5,16 @@ const getSizeBase ={
     "result":0,
     "sizes":[
         {
-            "id":1,
-            "name":"S"
+            "num":1,
+            "size":"S"
         },
         {
-            "id":2,
-            "name":"XS"
+            "num":2,
+            "size":"XS"
         },
         {
-            "id":3,
-            "name":"M"
+            "num":3,
+            "size":"M"
         }
     ]
 

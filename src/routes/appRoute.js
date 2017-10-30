@@ -129,4 +129,32 @@ module.exports = function (server) {
             handler:appHandler.orderAdd
         }
     })
+    server.route({
+        method:'post',
+        path:'/comm/upload',
+        config:{
+            handler:appHandler.upload
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/img/save',
+        config:{
+            handler:appHandler.saveImg
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/colth/save',
+        config:{
+            handler:appHandler.saveImg
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/submaterial/save',
+        config:{
+            handler:appHandler.saveImg
+        }
+    })
 }

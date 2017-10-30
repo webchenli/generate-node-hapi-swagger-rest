@@ -7,6 +7,8 @@ const log = require('../config/logger'),
     SaveOrderBase = require('../models/saveOrderBase'),
     GetSizeBase = require('../models/getSizeBase'),
     OrderAdd = require('../models/orderAdd'),
+    SaveImg = require('../models/saveImg'),
+    Upload = require('../models/upload'),
     SaveOrderSizes = require('../models/saveOrderSizes'),
     Feed = require('../models/feed');
 
@@ -74,6 +76,14 @@ module.exports = {
     orderAdd:function(request,reply){
         const add = OrderAdd ;
         reply(add)
+    },
+    upload:function(request,reply){
+        const add = Upload ;
+        reply(add)
+    },
+    saveImg:function(request,reply){
+        const ad = SaveImg ;
+        reply(ad)
     }
 
 
