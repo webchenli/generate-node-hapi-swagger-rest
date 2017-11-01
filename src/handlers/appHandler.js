@@ -9,8 +9,13 @@ const log = require('../config/logger'),
     OrderAdd = require('../models/orderAdd'),
     SaveImg = require('../models/saveImg'),
     Upload = require('../models/upload'),
+    Common = require('../models/common'),
     SaveOrderSizes = require('../models/saveOrderSizes'),
+    Outfactory = require('../models/outfactory'),
+    OutfactoryItem= require('../models/outfactoryItem'),
+    Outtech = require('../models/outtech'),
     Feed = require('../models/feed');
+
 
 //exports
 module.exports = {
@@ -84,7 +89,24 @@ module.exports = {
     saveImg:function(request,reply){
         const ad = SaveImg ;
         reply(ad)
-    }
+    },
+    common:function(request,reply){
+        const ad = Common ;
+        reply(ad)
+    },
+    outfactory:function(request,reply){
+        const ad = Outfactory ;
+        reply(ad)
+    },
+    outtech:function(request,reply){
+        const ad = Outtech ;
+        reply(ad)
+    },
+    outfactoryItem:function(request,reply){
+        const ad = OutfactoryItem ;
+        reply(ad)
+    },
+
 
 
 }; //end of module exports

@@ -96,7 +96,7 @@ module.exports = function (server) {
     })
     server.route({
         method:'post',
-        path:'/getSizeBase',
+        path:'/order/size/default',
         config:{
             handler:appHandler.getSizeBase
         }
@@ -155,6 +155,48 @@ module.exports = function (server) {
         path:'/order/submaterial/save',
         config:{
             handler:appHandler.saveImg
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/selfwork/save',
+        config:{
+            handler:appHandler.common
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/outtech/save',
+        config:{
+            handler:appHandler.common
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/client/all',
+        config:{
+            handler:appHandler.queryClientList
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/outfactory/find',
+        config:{
+            handler:appHandler.outfactory
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/outtech/find',
+        config:{
+            handler:appHandler.outtech
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/outfactory/item/find',
+        config:{
+            handler:appHandler.outfactoryItem
         }
     })
 }

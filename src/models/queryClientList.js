@@ -1,4 +1,5 @@
 const queryClientList ={
+    "result":0,
     "clients":[
         {
             "id":0,
