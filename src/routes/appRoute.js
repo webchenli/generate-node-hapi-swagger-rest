@@ -68,9 +68,9 @@ module.exports = function (server) {
     })
     server.route({
         method:'post',
-        path:'/client/login',
+        path:'/user/login',
         config:{
-            handler:appHandler.userExsisted
+            handler:appHandler.loginBox
         }
     })
     server.route({
@@ -171,6 +171,43 @@ module.exports = function (server) {
             handler:appHandler.common
         }
     })
+
+    server.route({
+        method:'post',
+        path:'/worker/add',
+        config:{
+            handler:appHandler.common
+        }
+    })
+
+    server.route({
+        method:'post',
+        path:'/work/add',
+        config:{
+            handler:appHandler.common
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/salary/add',
+        config:{
+            handler:appHandler.common
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/income/add',
+        config:{
+            handler:appHandler.common
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/income_client/add',
+        config:{
+            handler:appHandler.common
+        }
+    })
     server.route({
         method:'post',
         path:'/order/client/all',
@@ -199,4 +236,35 @@ module.exports = function (server) {
             handler:appHandler.outfactoryItem
         }
     })
+    server.route({
+        method:'post',
+        path:'/worker/all',
+        config:{
+            handler:appHandler.workerAll
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/work/all',
+        config:{
+            handler:appHandler.workAll
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/income/find',
+        config:{
+            handler:appHandler.incomeFind
+        }
+    })
+    server.route({
+        method:'post',
+        path:'/order/detail',
+        config:{
+            handler:appHandler.orderDetail
+        }
+    })
+
+
+
 }

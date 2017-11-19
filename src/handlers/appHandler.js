@@ -14,6 +14,11 @@ const log = require('../config/logger'),
     Outfactory = require('../models/outfactory'),
     OutfactoryItem= require('../models/outfactoryItem'),
     Outtech = require('../models/outtech'),
+    WorkerAll = require('../models/workerAll'),
+    WorkAll = require('../models/workAll'),
+    LoginBox = require('../models/loginBox'),
+    IncomeFind = require('../models/incomeFind'),
+    OrderDetail = require('../models/orderDetail'),
     Feed = require('../models/feed');
 
 
@@ -104,6 +109,26 @@ module.exports = {
     },
     outfactoryItem:function(request,reply){
         const ad = OutfactoryItem ;
+        reply(ad)
+    },
+    workerAll:function(request,reply){
+        const ad = WorkerAll ;
+        reply(ad)
+    },
+    workAll:function(request,reply){
+        const ad = WorkAll ;
+        reply(ad)
+    },
+    loginBox:function(request,reply){
+        const ad = LoginBox ;
+        reply(ad)
+    },
+    incomeFind:function(request,reply){
+        const ad = IncomeFind ;
+        reply(ad)
+    },
+    orderDetail:function(request,reply){
+        const ad = OrderDetail ;
         reply(ad)
     },
 
