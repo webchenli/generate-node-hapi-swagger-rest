@@ -8,6 +8,14 @@ const outfactory ={
         {
             "id":1,
             "name":"项目B"
+        },
+        {
+            "id":2,
+            "name":"项目C"
+        },
+        {
+            "id":3,
+            "name":"项目d"
         }
     ]
 

@@ -217,7 +217,7 @@ module.exports = function (server) {
     })
     server.route({
         method:'post',
-        path:'/outfactory/find',
+        path:'/outfac/find',
         config:{
             handler:appHandler.outfactory
         }
@@ -231,7 +231,7 @@ module.exports = function (server) {
     })
     server.route({
         method:'post',
-        path:'/outfactory/item/find',
+        path:'/outfac/findItem',
         config:{
             handler:appHandler.outfactoryItem
         }

@@ -2,12 +2,20 @@ const outfactory ={
     "result":0,
     "techs":[
         {
-            "id":0,
+            "id":1,
             "name":"外发工艺项目A"
         },
         {
-            "id":1,
+            "id":2,
             "name":"外发工艺项目B"
+        },
+        {
+            "id":3,
+            "name":"外发工艺项目SB"
+        },
+        {
+            "id":4,
+            "name":"外发工艺项目FB"
         }
     ]
 

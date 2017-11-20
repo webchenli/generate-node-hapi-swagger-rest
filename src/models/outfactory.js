@@ -2,12 +2,20 @@ const outfactory ={
     "result":0,
     "factorys":[
         {
-            "id":0,
+            "id":1,
             "name":"外发工厂A"
         },
         {
-            "id":1,
+            "id":2,
             "name":"外发工厂B"
+        },
+        {
+            "id":3,
+            "name":"外发工厂B2"
+        },
+        {
+            "id":4,
+            "name":"外发工厂B3"
         }
     ]
 
